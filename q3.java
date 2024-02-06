@@ -40,3 +40,11 @@ public static void bubbleSort(int[] arr) {
 // The time complexity of the algorithm is O(n^2) in the worst case, where n is the number of elements in the array. This is because the algorithm has to make n-1 passes through the array, and in each pass, it has to compare and potentially swap each pair of adjacent elements. This results in a time complexity of O(n^2).
 // In the best case, where the array is already sorted, the algorithm only needs to make one pass through the array to confirm that no swaps are needed. This results in a time complexity of O(n) in the best case. The best case occurs when the input is already in sorted order, and the algorithm can exit early without making any swaps.
 
+//4.How do these ‘tweaks’ make the algorithm more efficient?
+
+// The first tweak of adding a flag to check if any swaps were made in the inner loop allows the algorithm to exit early if the array is already sorted. This reduces the number of iterations needed in the best case scenario, making the algorithm more efficient.
+// The second tweak of reducing the number of iterations in the outer loop after each pass through the
+// array also reduces the number of comparisons and swaps needed, making the algorithm more efficient. After each pass, the largest element is guaranteed to be in its correct position, so the algorithm can reduce the number of iterations in the outer loop by 1 after each pass. This reduces the time complexity in the best case scenario to O(n), making the algorithm more efficient.
+// Both tweaks improve the efficiency of the bubble sort algorithm by reducing the number of comparisons and swaps needed in the best case scenario, and by allowing the algorithm to exit early if the array is already sorted. These improvements make the algorithm more practical for sorting small arrays or arrays that are nearly in sorted order. However, the bubble sort algorithm is still not practical for most problems due to its O(n^2) time complexity in the worst case. More efficient sorting algorithms such as quicksort or mergesort are typically used for larger datasets.
+
+
