@@ -58,3 +58,5 @@ public class q9 {
     }
 }
 //random array of size 100000 has the speed of 42574 milliseconds
+//much slower than the built in array method
+
